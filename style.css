@@ -1,0 +1,120 @@
+body {
+    margin: 5px 150px;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+height: 5rem;
+}
+
+ul {
+display: flex;
+list-style:none;
+}
+
+a {
+background-color: #dfdfef;
+display: block;
+text-align: center;
+padding: 15px 17px;
+text-decoration: none;
+hover
+}
+
+a:hover {
+background-color: #b19cd9;
+}
+
+li {
+border-right: 2px solid #ebcbca;
+}
+
+body ul > li:first-child > a {
+    border-radius: 5px 0 0 5px;
+}
+
+body ul > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+}
+
+body ul > li:last-child {
+    border-right: none;
+}
+
+main {
+padding-top: 5rem;
+}
+
+input {
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 10px 15px;
+margin: 2px;
+ box-sizing : border-box;
+}
+
+form > .first-row {
+display: flex;
+flex-direction: row;
+}
+
+.form-field {
+display: flex;
+flex: 1;
+flex-direction: column;
+margin: 10px 5px;
+background-color: #dfdfef;
+padding: 14px;
+}
+
+form > .second-row {
+display: flex;
+flex-direction: row;
+}
+
+form > .second-row > .form-field:first-child{
+background-color: rgba(255, 0, 0, 0.2);
+}
+
+form > .action-button {
+display: flex;
+justify-content: flex-end;
+}
+
+button {
+background-color: #ddd;
+padding: 16px 32px;
+text-align: center;
+transition: background-color 1s;
+margin-top: 20px
+}
+
+#submit {
+border-color: #4CAF50;
+margin-right: 10px;
+}
+
+#submit:hover {
+background-color: #4CAF50;
+}
+
+#reset {
+border-color: #ff0000;
+}
+
+#reset:hover {
+background-color: #ff0000;
+}
+
+#gender > select{
+box-sizing: border-box;
+padding: 10px;
+margin: 2px 8px;
+border: 2px solid #ccc;
+border-radius: 4px;
+}
