@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test repo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <img class="logo" src="./img/logo.jpg" alt="logo image">
+      <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Owners</a></li>
+            <li><a href="/cars.html">Cars</a></li>
+            <li><a href="#">Insurance</a></li>
+        </ul>
+      </nav>
+  </header>
+
+
+  <!-- doar continutul care ulterior se modifica-->
+  <main>
+    <h1>Add new person</h1>
+      <form>
+          <div class="form-field">
+              <label for="first-name-input">First Name</label>
+              <input type="text" id="first-name-input">
+          </div>
+      </form>
+      <form>
+          <div class="form-field">
+              <label for="last-name-input">Last Name</label>
+              <input type="text" id="last-name-input">
+          </div>
+      </form>
+      <form>
+          <div class="form-field">
+              <label for="cnp-name-input">CNP Name</label>
+              <input type="text" id="cnp-name-input">
+          </div>
+      </form>
+      <form>
+          <div class="form-field">
+              <label for="birthdate-input">BirthDate</label>
+              <input type="date" id="birthdate-input">
+          </div>
+      </form>
+      <form>
+          <div class="form-field">
+              <label for="gender-input">Gender</label>
+              <select id="gender-input">
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>N/A</option>
+              </select>
+          </div>
+          <div class="action-button">
+              <button type="submit">Add Person</button>
+              <button type="reset">Reset Form</button>
+          </div>
+      </form>
+  </main>
+</body>
+</html>
