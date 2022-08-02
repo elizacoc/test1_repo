@@ -4,7 +4,8 @@ grid-template-columns: repeat(2, 1fr); /*70% 30%; *//*500px 300px nu e recomanda
 /*grid-column-gap: 1em;
 grid-row-gap: 1em;*/
 grid-gap: 1em;
-grid-auto-rows: 80px;
+/* grid-auto-rows: 80px; */
+grid-auto-rows: minmax(80px, auto);
 }
 
 .wrapper > div{
