@@ -5,15 +5,23 @@ body {
 }
 
 header {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
 }
 
-ul {
+header ul {
 display: flex;
 list-style:none;
+}
+
+header ul li {
+
+}
+
+header li > a {
+
 }
 
 a {
@@ -22,7 +30,7 @@ display: block;
 text-align: center;
 padding: 15px 17px;
 text-decoration: none;
-hover
+height: 20
 }
 
 a:hover {
@@ -55,26 +63,27 @@ border: 1px solid #ccc;
 border-radius: 4px;
 padding: 10px 15px;
 margin: 2px;
- box-sizing : border-box;
+box-sizing : border-box;
 }
 
 form > .first-row {
 display: flex;
 flex-direction: row;
+justify-content: space-between;
 }
 
 .form-field {
 display: flex;
-flex: 1;
 flex-direction: column;
-margin: 10px 5px;
+margin: 0px 0px 30px;
 background-color: #dfdfef;
-padding: 14px;
+padding: 10px;
 }
 
 form > .second-row {
 display: flex;
 flex-direction: row;
+justify-content: space-between;
 }
 
 form > .second-row > .form-field:first-child{
@@ -91,12 +100,11 @@ background-color: #ddd;
 padding: 16px 32px;
 text-align: center;
 transition: background-color 1s;
-margin-top: 20px
 }
 
 #submit {
 border-color: #4CAF50;
-margin-right: 10px;
+margin-right: 20px;
 }
 
 #submit:hover {
@@ -114,7 +122,15 @@ background-color: #ff0000;
 #gender > select{
 box-sizing: border-box;
 padding: 10px;
-margin: 2px 8px;
 border: 2px solid #ccc;
 border-radius: 4px;
+}
+
+
+.half-row {
+width: calc(50% - 30px);
+}
+
+.quater-row {
+width: calc(25% - 35px);
 }
