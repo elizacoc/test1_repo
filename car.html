@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car</title>
+  <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+<header>
+  <img class="logo" src="./img/logo.jpg" alt="logo image">
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="owner.html">Owners</a></li>
+      <li><a href="car.html">Cars</a></li>
+      <li><a href="insurance.html">Insurance</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- doar continutul care ulterior se modifica-->
+<main>
+  <h1>Add new car</h1>
+  <form>
+
+      <div class="form-field2 grid-col-span-2">
+        <label for="brand-name-input">Brand Name</label>
+        <input type="text" id="brand-name-input">
+      </div>
+      <div class="form-field2 grid-col-span-2">
+        <label for="model-name-input">Model Name</label>
+        <input type="text" id="model-name-input">
+      </div>
+      <div class="form-field2 grid-col-span-2">
+        <label for="cubic-cap-input">Cubic Cap</label>
+        <input type="number" id="cubic-cap-input">
+      </div>
+      <div class="form-field2 grid-col-span-2">
+        <label for="serial-number-input">Serial Number</label>
+        <input type="text" id="serial-number-input">
+      </div>
+      <div class="form-field2" id="type-select">
+        <label for="type">Type</label>
+        <select id="type">
+          <option>Diesel</option>
+          <option>Hybrid</option>
+          <option>Electric</option>
+        </select>
+      </div>
+      <div class="form-field2">
+        <label for="plates-input">Plates</label>
+        <input type="text" id="plates-input">
+      </div>
+      <div class="form-field2" id="fuel-radio">
+        <legend for="fuel">Fuel type</legend>
+        <div>
+          <input type="radio" id="gasoline" name="fuel" checked>
+          <label for="gasoline">Gasoline</label>
+        </div>
+        <div>
+          <input type="radio" id="diesel" name="fuel">
+          <label for="diesel">Diesel</label>
+        </div>
+        <div>
+          <input type="radio" id="bio-diesel" name="fuel">
+          <label for="bio-diesel">Bio-Diesel</label>
+        </div>
+        <div>
+          <input type="radio" id="ethanol" name="fuel">
+          <label for="ethanol">Ethanol</label>
+        </div>
+          <div>
+              <input type="radio" id="cng" name="fuel">
+              <label for="cng">Compressed Natural Gas</label>
+          </div>
+      </div>
+      <div class="form-field2">
+        <label for="power-input">Power</label>
+        <input type="number" id="power-input">
+      </div>
+      <div class="form-field2" id="owner-id-select">
+        <label for="owner-id">Owner Id</label>
+        <select id="owner-id">
+          <option>Owner Id 1</option>
+          <option>Owner Id 2</option>
+          <option>Owner Id 3</option>
+        </select>
+      </div>
+    <div class="action-button2">
+      <button type="submit" id="submit">Add Car</button>
+      <button type="reset" id="reset">Reset Form</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>

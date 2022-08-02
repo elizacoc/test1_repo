@@ -1,0 +1,39 @@
+body {
+    margin: 5px 150px;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+}
+
+main {
+padding-top: 5rem;
+}
+
+form > .form-field {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+input {
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 10px 15px;
+margin: 2px;
+box-sizing : border-box;
+}
+
+button {
+background-color: #F8C8DC;
+padding: 16px 32px;
+text-align: center;
+transition: background-color 1s;
+}
+
+#submit {
+border-color: #663399;
+margin-right: 20px;
+}
+
+#submit:hover {
+background-color: #A7C7E7;
+}

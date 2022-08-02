@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+<header>
+    <img class="logo" src="./img/logo.jpg" alt="logo image">
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="owner.html">Owners</a></li>
+            <li><a href="car.html">Cars</a></li>
+            <li><a href="insurance.html">Insurance</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- doar continutul care ulterior se modifica-->
+<main>
+    <h1>Add new person</h1>
+    <form>
+            <div class="form-field3 grid-col-span-2" id="company-select">
+                <label for="company">Company Name</label>
+                <select id="company">
+                    <option>Allianz</option>
+                    <option>Berkshire Hathaway</option>
+                    <option>AIA Group</option>
+                </select>
+            </div>
+            <div class="form-field3 grid-col-span-2" id="person-id-select">
+                <label for="person-id">Person ID</label>
+                <select id="person-id">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="form-field3 grid-col-span-2" id="car-id-select">
+                <label for="car-id">Car ID</label>
+                <select id="car-id">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="form-field3">
+                <legend>Direct Pay</legend>
+                <div>
+                    <input type="checkbox" id="mastercard" name="direct">
+                    <label for="mastercard">Mastercard</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="visa" name="direct">
+                    <label for="visa">Visa</label>
+                </div>
+            </div>
+            <div class="form-field3" id="payment-radio">
+                <legend for="fuel">Payment Type</legend>
+                <div>
+                    <input type="radio" id="debit-card" name="payment-type" checked>
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="credit-card" name="payment-type">
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="bank-transfer" name="payment-type">
+                    <label for="bank-transfer">Bank Transfer</label>
+                </div>
+                <div>
+                    <input type="radio" id="direct-debit" name="payment-type">
+                    <label for="direct-debit">Direct Debit</label>
+                </div>
+            </div>
+            <div class="form-field3 grid-col-span-2">
+                <label for="start-input">Start</label>
+                <input type="date" id="start-input">
+            </div>
+            <div class="form-field3 grid-col-span-2">
+                <label for="end-input">End</label>
+                <input type="date" id="end-input">
+            </div>
+
+            <div class="form-field3 grid-col-span-2">
+                <label for="price-input">Price</label>
+                <input type="number" id="price-input">
+            </div>
+            <div class="form-field3 grid-col-span-2">
+                <label for="notes-input">Notes</label>
+                <textarea id="notes-input">
+
+                </textarea>
+            </div>
+
+        <div class="action-button3">
+            <button type="submit" id="submit">Add Insurance</button>
+            <button type="reset" id="reset">Reset Form</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

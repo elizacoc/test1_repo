@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner</title>
+  <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+<header>
+  <img class="logo" src="./img/logo.jpg" alt="logo image">
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="owner.html">Owners</a></li>
+      <li><a href="car.html">Cars</a></li>
+      <li><a href="insurance.html">Insurance</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- doar continutul care ulterior se modifica-->
+<main>
+  <h1>Add new person</h1>
+  <form>
+
+      <div class="form-field grid-col-span-2">
+        <label for="first-name-input">First Name</label>
+        <input type="text" id="first-name-input">
+      </div>
+      <div class="form-field grid-col-span-2">
+        <label for="last-name-input">Last Name</label>
+        <input type="text" id="last-name-input">
+      </div>
+      <div class="form-field">
+        <label for="cnp-input">CNP</label>
+        <input type="text" id="cnp-input">
+      </div>
+      <div class="form-field">
+        <label for="birthdate-input">BirthDate</label>
+        <input type="date" id="birthdate-input">
+      </div>
+      <div class="form-field" id="gender">
+        <label for="gender-input">Gender</label>
+        <select id="gender-input">
+          <option>Male</option>
+          <option>Female</option>
+          <option>N/A</option>
+        </select>
+      </div>
+    <div class="action-button">
+      <button type="submit" id="submit">Add Person</button>
+      <button type="reset" id="reset">Reset Form</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>

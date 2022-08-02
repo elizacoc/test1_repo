@@ -1,0 +1,258 @@
+body {
+    margin: 5px 150px;
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+header ul {
+display: flex;
+list-style:none;
+}
+
+header ul li {
+
+}
+
+header li > a {
+
+}
+
+a {
+background-color: #dfdfef;
+display: block;
+text-align: center;
+padding: 15px 17px;
+text-decoration: none;
+height: 20
+}
+
+a:hover {
+background-color: #b19cd9;
+}
+
+li {
+border-right: 2px solid #ebcbca;
+}
+
+body ul > li:first-child > a {
+    border-radius: 5px 0 0 5px;
+}
+
+body ul > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+}
+
+body ul > li:last-child {
+    border-right: none;
+}
+
+main {
+padding-top: 5rem;
+}
+
+form {
+display: grid;
+grid-gap: 2rem;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.form-field {
+background-color: #dfdfef;
+padding: 14px;
+}
+
+form > .form-field:nth-child(3) {
+grid-column: span 2;
+grid-row: 2;
+}
+
+form > .form-field:nth-child(4) {
+grid-column: 3/4;
+grid-row: 2;
+}
+
+form > .form-field:last-child {
+grid-column: 4/5;
+grid-row: 2/3;
+}
+
+input {
+width: 100%;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 10px 15px;
+margin: 2px;
+box-sizing : border-box;
+}
+
+form > .form-field:nth-child(3){
+background-color: rgba(255, 0, 0, 0.2);
+}
+
+form > .action-button {
+ grid-column: 3 / 5;
+display: flex;
+justify-content: flex-end;
+}
+
+button {
+background-color: #ddd;
+padding: 16px 32px;
+text-align: center;
+transition: background-color 1s;
+}
+
+#submit {
+border-color: #4CAF50;
+margin-right: 20px;
+}
+
+#submit:hover {
+background-color: #4CAF50;
+}
+
+#reset {
+border-color: #ff0000;
+}
+
+#reset:hover {
+background-color: #ff0000;
+}
+
+#gender {
+    position: relative;
+}
+
+#gender > select {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 0px 10px;
+    width: 100%;
+}
+
+/*form field car*/
+.form-field2 {
+background-color: #dfdfef;
+padding: 14px;
+}
+
+form > .form-field2:nth-child(5) {
+grid-column: 4/5;
+grid-row: 3;
+}
+
+form > .form-field2:nth-child(6) {
+grid-column: span 2;
+grid-row: 3;
+}
+
+form > .form-field2:nth-child(7) {
+grid-column: 3/4;
+grid-row: 3/5;
+}
+
+form > .form-field2:nth-child(8) {
+grid-column: span 2;
+grid-row: 4
+}
+
+form > .form-field:last-child {
+grid-column: 4/5;
+grid-row: 4;
+}
+
+form > .action-button2 {
+ grid-column: 4 / 5;
+ grid-row: 5;
+display: flex;
+justify-content: flex-end;
+}
+
+select {
+position: relative;
+box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 0px 10px;
+    width: 100%;
+}
+
+.form-field2 > div > input{
+width: auto;
+}
+
+.form-field2 > div{
+margin: 10px;
+}
+
+/*form field for insurance*/
+.form-field3 {
+background-color: #dfdfef;
+padding: 14px;
+}
+
+form > .form-field3:nth-child(8) {
+grid-column: 3/5;
+grid-row: 2;
+}
+
+form > .form-field3:nth-child(6) {
+grid-row: 3;
+}
+
+form > .form-field3:nth-child(7) {
+grid-row: 3;
+}
+
+form > .action-button3 {
+ grid-column: 4 / 5;
+ grid-row: 5;
+display: flex;
+justify-content: flex-end;
+}
+
+select {
+position: relative;
+box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0px 0px 10px;
+    width: 100%;
+}
+
+.form-field3 > div > input{
+width: auto;
+}
+
+.form-field3 > div{
+margin: 10px;
+}
+
+textarea {
+width: 100%;
+height: 80%;
+border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 2px;
+    box-sizing: border-box;
+}
+}
