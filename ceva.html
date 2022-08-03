@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+<style>
+
+:root {
+  --colorBorder: #cdcfd3;
+  --colorAccent: #003bde;
+  --gutter: 0 16px;
+  --border: 1.5px solid var(--colorBorder);
+  --radius: 3px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: var(--border);
+  border-radius: var(--radius);
+  height: 36px;
+  width: 280px;
+  margin-top: 100px;
+  padding: var(--gutter);
+  background-color: white;
+}
+
+.dd-structure {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.dd-structure>div {
+  padding: 16px;
+}
+
+.dd-structure>div:hover {
+  background-color: var(--colorAccent);
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+</style>
+</head>
+
+  <body>
+    <div id='container'>
+    	<div id='dropdown'>
+        	<div class='input'>
+            	<span id='myCarType'></span>
+        	</div>
+            <div id='dropdown-structure'>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/ceva.js">
+
+    </script>
+  </body>
+
+</html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Car</title>
   <link rel="stylesheet" href="newstyle.css">
-  <script src="scripts/cars.js"></script>
+  
 </head>
 <body>
 <header>
@@ -41,11 +41,15 @@
         <label for="serial-number-input">Serial Number</label>
         <input type="text" id="serial-number-input">
       </div>
-      <div class="form-field2" id="type-select">
-        <label for="type-car">Type</label>
-        <select id="type-car">
-          
-        </select>
+      <div class="form-field2" id='container'>
+        <label for="dropdown">Type</label>
+        <div id='dropdown'>
+            <div class='input'>
+                <span class='something' id='my-car-type'></span>
+            </div>
+              <div id='dropdown-structure'>
+              </div>
+          </div>
       </div>
       <div class="form-field2">
         <label for="plates-input">Plates</label>
@@ -78,13 +82,15 @@
         <label for="power-input">Power</label>
         <input type="number" id="power-input">
       </div>
-      <div class="form-field2" id="owner-id-select">
-        <label for="owner-id">Owner Id</label>
-        <select id="owner-id">
-          <option>Owner Id 1</option>
-          <option>Owner Id 2</option>
-          <option>Owner Id 3</option>
-        </select>
+      <div class="form-field2" id='container2'>
+        <label for="dropdown2">Owner ID</label>
+        <div id='dropdown2'>
+            <div class='input2'>
+                <span class='something2' id='owner-id'></span>
+            </div>
+              <div id='dropdown-structure2'>
+              </div>
+        </div>
       </div>
     <div class="action-button2">
       <button type="submit" id="submit">Add Car</button>
@@ -92,5 +98,6 @@
     </div>
   </form>
 </main>
+<script src="scripts/cars.js"></script>
 </body>
 </html>

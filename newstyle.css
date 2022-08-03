@@ -20,12 +20,6 @@ header ul li {
     background-color: #dfdfef;
 }
 
-header li > a {
-
-}
-
-
-
 a {
 display: block;
 text-align: center;
@@ -171,9 +165,12 @@ grid-column: span 2;
 grid-row: 4
 }
 
-form > .form-field:last-child {
-grid-column: 4/5;
-grid-row: 4;
+form > .form-field2:last-child {
+/* grid-column: 4/5;
+grid-row: 4; */
+grid-column: 1/2;
+grid-row: 1;
+position: absolute;
 }
 
 form > .action-button2 {
@@ -228,17 +225,6 @@ display: flex;
 justify-content: flex-end;
 }
 
-select {
-position: relative;
-box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: inline-block;
-    margin: 0px 0px 10px;
-    width: 100%;
-}
-
 .form-field3 > div > input{
 width: auto;
 }
@@ -259,3 +245,68 @@ border: 1px solid #ccc;
 .activ{
     background-color: #4CAF50;
 }
+
+/* style for custom dropdown */
+
+  .input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.5px solid #cdcfd3;
+    border-radius: 3px;
+    height: 36px;
+    width: 280px;
+    padding: 0 16px;
+    background-color: white;
+  }
+
+  .input2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.5px solid #cdcfd3;
+    border-radius: 3px;
+    height: 36px;
+    width: 280px;
+    padding: 0 16px;
+    background-color: white;
+  }
+  
+  .dd-structure {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    padding: 10px 0;
+    position: absolute;
+  }
+
+  .dd-structure2 {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    padding: 10px 0;
+    position: absolute;
+  }
+  
+  .dd-structure>div {
+    padding: 16px;
+  }
+  
+  .dd-structure>div:hover {
+    background-color: #b19cd9;
+    cursor: pointer;
+  }
+
+  .dd-structure2>div {
+    padding: 16px;
+  }
+  
+  .dd-structure2>div:hover {
+    background-color: #b19cd9;
+    cursor: pointer;
+  }
+  
+  
+  .hide {
+    display: none;
+  }
