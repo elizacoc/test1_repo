@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Test repo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="newstyle.css">
+    <script src="scripts/cars.js"></script>
 </head>
 <body>
-  <header>
-      <img class="logo" src="./img/logo.jpg" alt="logo image">
-      <nav id="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Owners</a></li>
-            <li><a href="cars.html">Cars</a></li>
-            <li><a href="#">Insurance</a></li>
-        </ul>
-      </nav>
-  </header>
+<header>
+  <img class="logo" src="./img/logo.jpg" alt="logo image">
+  <nav id="menu">
+    <ul>
+      <li onclick="selectPageByIndex(0)"><a href="#">Home</a></li>
+      <li onclick="selectPageByIndex(1)"><a href="#">Owners</a></li>
+      <li onclick="selectPageByIndex(2)"><a href="#">Cars</a></li>
+      <li onclick="selectPageByIndex(3)"><a href="#">Insurance</a></li>
+    </ul>
+  </nav>
+</header>
 
 
   <!-- doar continutul care ulterior se modifica-->
@@ -57,5 +58,6 @@
           </div>
       </form>
   </main>
+  <!-- <script src="scripts/demo.js"></script> -->
 </body>
 </html>
