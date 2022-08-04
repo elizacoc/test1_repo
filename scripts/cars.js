@@ -13,14 +13,14 @@
 //     });
 // }
 
-// function selectPageByIndex(index) {
-//     const navigation = document.getElementsByTagName('ul')[0];
-//     const itemList = navigation.querySelectorAll('li');
-//     // itemList.forEach((item) => {
-//     //     item.classList.remove('activ');
-//     // })
-//     itemList[index].classList.add('activ');
-// }
+ function selectPageByIndex(index) {
+     const navigation = document.getElementsByTagName('ul')[0];
+     const itemList = navigation.querySelectorAll('li');
+     // itemList.forEach((item) => {
+     //     item.classList.remove('activ');
+     // })
+     itemList[index].classList.add('activ');
+ }
 
 // custom dropdown
 
@@ -78,7 +78,6 @@ dropdown();
 const ownerID = ['029318438', '345345624', '325245345'];
 
 const printArea2 = document.getElementById("container2");
-
 const dropdown2 = () => {
   const component = document.getElementById("dropdown2");
   const input = createInput2();
